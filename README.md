@@ -26,3 +26,5 @@ npm run dev
 ```
 
 ## Live 📍
+
+<a>https://hangman-psi-brown.vercel.app/</a>
