@@ -1,0 +1,20 @@
+@media (max-width: 650px) {
+  .hangman_text {
+    scale: 0.6;
+  }
+}
+
+@media (max-width: 450px) {
+  .hangman_text {
+    scale: 0.5;
+  }
+}
+
+.hangman_text {
+  display: flex;
+  gap: 0.25em;
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: monospace;
+}
