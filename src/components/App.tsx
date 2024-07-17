@@ -13,11 +13,11 @@ function App() {
 
   const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
 
-  const inCorrectLetters = guessedLetters.filter(
+  const incorrectLetters = guessedLetters.filter(
     (letter) => !wordToGuess.includes(letter)
   );
 
-  const isLoser = inCorrectLetters.length >= 10;
+  const isLoser = incorrectLetters.length >= 10;
   const isWinner = wordToGuess
     .split("")
     .every((letter) => guessedLetters.includes(letter));
@@ -81,10 +81,10 @@ function App() {
           textAlign: "center",
         }}
       >
-        {isWinner && "Winner! - Refresh to try again"}
-        {isLoser && "Nicy try - Refresh to try again"}
+        {isWinner && "Winner! - Refresh to play again"}
+        {isLoser && "Nice try - Refresh to try again"}
       </div>
-      <HangmanDrawing numberOfGuesses={inCorrectLetters.length} />
+      <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord
         isWinner={isWinner}
         reveal={isLoser}
@@ -101,7 +101,7 @@ function App() {
           activeLetters={guessedLetters.filter((letter) =>
             wordToGuess.includes(letter)
           )}
-          inactiveLetters={inCorrectLetters}
+          inactiveLetters={incorrectLetters}
           addGuessedLetter={addGuessedLetter}
         />
       </div>
