@@ -5,7 +5,7 @@
   border: 10px solid black;
   position: absolute;
   top: 50px;
-  right: -30px;
+  right: -110px;
 }
 
 .body {
@@ -14,7 +14,7 @@
   background: black;
   position: absolute;
   top: 119px;
-  right: 0;
+  right: -80px;
 }
 
 .right_arm {
@@ -23,7 +23,7 @@
   background: black;
   position: absolute;
   top: 150px;
-  right: -100px;
+  right: -180px;
   rotate: -30deg;
   transform-origin: left bottom;
 }
@@ -34,7 +34,7 @@
   background: black;
   position: absolute;
   top: 150px;
-  right: 10px;
+  right: -70px;
   rotate: 30deg;
   transform-origin: right bottom;
 }
@@ -45,7 +45,7 @@
   background: black;
   position: absolute;
   top: 210px;
-  right: -90px;
+  right: -170px;
   rotate: 60deg;
   transform-origin: left bottom;
 }
@@ -56,7 +56,40 @@
   background: black;
   position: absolute;
   top: 210px;
-  right: 0;
+  right: -80px;
   rotate: -60deg;
   transform-origin: right bottom;
+}
+
+.construction4 {
+  height: 50px;
+  width: 10px;
+  background: black;
+  position: absolute;
+  top: 0;
+  right: -80px;
+}
+
+.construction3 {
+  height: 10px;
+  width: 200px;
+  background: black;
+  margin-left: 120px;
+  position: absolute;
+  top: 0;
+}
+
+.construction2 {
+  height: 500px;
+  width: 10px;
+  background: black;
+  margin-left: 120px;
+}
+
+.construction1 {
+  height: 10px;
+  width: 250px;
+  background: black;
+  position: absolute;
+  bottom: 0;
 }

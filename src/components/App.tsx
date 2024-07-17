@@ -17,7 +17,7 @@ function App() {
     (letter) => !wordToGuess.includes(letter)
   );
 
-  const isLoser = inCorrectLetters.length >= 6;
+  const isLoser = inCorrectLetters.length >= 10;
   const isWinner = wordToGuess
     .split("")
     .every((letter) => guessedLetters.includes(letter));
@@ -86,6 +86,7 @@ function App() {
       </div>
       <HangmanDrawing numberOfGuesses={inCorrectLetters.length} />
       <HangmanWord
+        isWinner={isWinner}
         reveal={isLoser}
         guessedLetters={guessedLetters}
         wordToGuess={wordToGuess}
