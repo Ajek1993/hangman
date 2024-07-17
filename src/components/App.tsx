@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import words from "./wordList.json";
+import words from "../wordList.json";
 import HangmanDrawing from "./HangmanDrawing";
 import HangmanWord from "./HangmanWord";
 import Keyboard from "./Keyboard";
@@ -45,7 +45,7 @@ function App() {
     return () => {
       document.removeEventListener("keypress", handler);
     };
-  }, [guessedLetters]);
+  }, [guessedLetters, addGuessedLetter]);
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
